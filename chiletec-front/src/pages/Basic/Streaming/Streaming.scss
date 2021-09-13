@@ -1,0 +1,500 @@
+@import "../../../scss/variables";
+
+.contenedorStreaming {
+	position: relative;
+	display: table;
+	width: 100%;
+	background-image: url(../../../assets/images/fondostreaming2.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 50px 50px 50px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.contenedorStreaming .imagen {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	z-index: -3;
+}
+.contenedorStreaming .logos2 {
+	float: left;
+	margin: 0 20px;
+	width: calc(100% - 440px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 10px;
+	position: relative;
+}
+.contenedorStreaming .boton1 {
+	float: left;
+	width: 200px;
+	cursor: pointer;
+}
+.contenedorStreaming .boton1 a {
+	color: white !important;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15px;
+}
+.contenedorStreaming .boton1 a .anticon {
+	margin-right: 20px;
+}
+.contenedorStreaming .boton2 {
+	float: left;
+	width: 200px;
+	cursor: pointer;
+}
+.contenedorStreaming .boton2 a {
+	margin-top: 15px;
+	background: #06a9b8;
+	cursor: pointer;
+	color: white;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white !important;
+	cursor: pointer;
+	/* z-index: 999; */
+}
+.contenedorStreaming .boton2 a img {
+	margin-right: 10px;
+}
+.contenedorStreaming .logos2 .imagenes {
+	position: absolute;
+	top: calc(50% - 5px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.contenedorStreaming .logos2 .imagenes img {
+	margin: 0px 5px;
+	width: 100%;
+	padding: 20px;
+	max-width: 800px;
+	position: relative;
+	display: block;
+	margin: auto;
+}
+// .contenedorStreaming .logos2 .imagenes .img1 {
+//   max-width: 180px;
+// }
+// .contenedorStreaming .logos2 .imagenes .img2 {
+//   max-width: 140px;
+// }
+// .contenedorStreaming .logos2 .imagenes .img3 {
+//   max-width: 200px;
+// }
+// .contenedorStreaming .logos2 .imagenes .img4 {
+//   max-width: 50px;
+// }
+.contenedorStreaming .logos2 .imagenes .img2 {
+	display: none;
+}
+// .contenedorStreaming .logos2 .imagenes .img6 {
+// 	max-width: 60px;
+// 	display: none;
+// }
+.contenedorStreaming .logos2 .imagen {
+	position: absolute;
+	top: calc(50% - 5px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100%);
+}
+.contenedorStreaming .logos2 span {
+	font-size: 24px;
+	color: white;
+	width: 28%;
+}
+.contenedorStreaming .streaming {
+	float: left;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.contenedorStreaming .streaming .col {
+	float: left;
+	width: 200px;
+	position: relative;
+}
+.contenedorStreaming .streaming .col .img {
+	height: 450px;
+}
+.contenedorStreaming .streaming .col .imagenes {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100% - 50px);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 400px;
+}
+
+.contenedorStreaming .streaming .col .imagenes img {
+	float: left;
+	width: 80%;
+	margin: 10px 0px;
+}
+.contenedorStreaming .streaming .col .imagenes span {
+	width: 80%;
+	margin: 10px 0px;
+}
+.contenedorStreaming .streaming .col .imagenes {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: calc(100% - 50px);
+	background: white;
+	transform: translate(-50%, -50%);
+}
+.contenedorStreaming .streaming .col .imagenes img {
+	position: relative;
+	display: block;
+	margin: auto;
+}
+.contenedorStreaming .streaming .col .imagenes .imgNone {
+	display: none;
+}
+.contenedorStreaming .streaming .col2 {
+	float: left;
+	width: calc(100% - 400px);
+	margin: 0px 10px;
+}
+.contenedorStreaming .streaming video {
+	width: 100%;
+	height: auto;
+	max-height: 550px;
+	margin: 0px;
+}
+.contenedorStreaming .streaming iframe {
+	float: left;
+	width: 100%;
+	height: 450px;
+	margin: 0px;
+	border: 10px solid transparent;
+	border-image: url(../../../assets/images/borde3.png) 15 15 repeat;
+	border-image-width: 10px;
+	z-index: 99;
+}
+.white {
+	background: #fff !important;
+}
+.contenedorStreaming .streaming .scroll {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 330px !important;
+	height: 180px;
+	z-index: 999;
+}
+
+.streaming-container {
+	position: relative;
+	display: block;
+	background-color: #f2f3f4;
+
+	.menu {
+		float: left;
+		width: 100%;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0px 50px;
+		background-image: url("../../../assets/images/fondoConfirmacion.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	// .streaming {
+	// 	position: relative;
+	// 	display: table;
+	// 	width: 100%;
+	// 	padding: 20px 0;
+	// 	height: calc(100vh - 100px);
+
+	// 	.transmission {
+	// 		position: relative;
+	// 		display: block;
+	// 		width: 100%;
+	// 		margin: 0 auto;
+	// 		height: calc(100vh - 100px);
+	// 	}
+
+	// }
+	.scroll {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 330px !important;
+		height: 180px;
+		z-index: 20;
+	}
+
+	.question-container {
+		position: relative;
+		display: flex;
+		width: 100%;
+		max-width: 1280px;
+		margin: 50px auto 0;
+		min-height: 100px;
+		background-color: #fff;
+		justify-content: space-between;
+		align-items: center;
+		border-top: 2px solid #b071df;
+		border-radius: 5px;
+		padding: 10px 30px 10px 30px;
+
+		h1 {
+			font-family: "Montserrat";
+			font-weight: bold;
+			font-size: 14px;
+			color: #333;
+			width: 100%;
+			max-width: 150px;
+		}
+
+		input {
+			width: 100%;
+			background-color: transparent;
+			font-family: "Montserrat";
+			font-weight: 400;
+			color: #999;
+			font-size: 14px;
+			border: 1px solid #ccc;
+			margin-left: 20px;
+			padding-left: 10px;
+			height: 40px;
+			line-height: 40px;
+			border-radius: 5px;
+		}
+
+		button {
+			font-family: "Montserrat";
+			font-weight: bold;
+			font-size: 16px;
+			color: #fff;
+			text-transform: uppercase;
+			background-color: #0380d3;
+			border: none;
+			height: 40px;
+			line-height: 40px;
+			padding: 0 40px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-left: 20px;
+		}
+	}
+
+	.contenedor {
+		position: relative;
+		display: table;
+		width: 100%;
+		max-width: 1280px;
+		margin: 50px auto 0;
+		clear: both;
+		background-color: #f2f3f4;
+
+		.stands {
+			float: left;
+			position: relative;
+			display: table;
+			width: 100%;
+			max-width: 1280px;
+
+			&:last-child {
+				margin-bottom: 50px;
+			}
+
+			img {
+				width: 100%;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.drawer-component {
+	.ant-drawer-content-wrapper {
+		width: 640px !important;
+	}
+}
+
+.ant-drawer-body {
+	padding: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 719px) {
+	.streaming-container {
+		.streaming {
+			max-height: 300px;
+
+			iframe {
+				max-height: 300px;
+			}
+		}
+
+		.question-container {
+			display: table;
+			margin-bottom: 50px;
+
+			h1 {
+				width: 100%;
+				margin: 0 auto 20px;
+				text-align: center;
+			}
+
+			input {
+				width: 100%;
+				margin: 0 auto 20px;
+			}
+
+			button {
+				width: 100%;
+				margin: 0 auto 20px;
+			}
+		}
+	}
+
+	.drawer-component {
+		.ant-drawer-content-wrapper {
+			width: 100% !important;
+		}
+	}
+
+	.contenedorStreaming {
+		width: 100%;
+		background-image: url(../../../assets/img/fondostreaming2.jpg);
+		background-size: cover;
+		background-position: center;
+		padding: 20px 20px 20px !important;
+		height: 100vh;
+	}
+	.contenedorStreaming .boton2 a {
+		font-size: 12px;
+	}
+	.contenedorStreaming .boton1 a {
+		font-size: 12px;
+	}
+	.contenedorStreaming .streaming .col2 {
+		float: left;
+		width: calc(100%) !important;
+		margin: 0px !important;
+	}
+	.contenedorStreaming .logos2 {
+		width: calc(100%) !important;
+		margin: 0px;
+		order: 3;
+	}
+	.fondo .contenedor .row .titulo h1 {
+		font-size: 22px;
+	}
+	.contenedorStreaming .responsive2 {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.contenedorStreaming .responsive2 .boton1 {
+		order: 1;
+		margin-bottom: 20px;
+		width: calc(50% - 10px);
+		margin-right: 20px;
+	}
+	.contenedorStreaming .responsive2 .boton2 {
+		order: 2;
+		margin-bottom: 20px;
+		width: calc(50% - 10px);
+	}
+	.contenedorStreaming .responsive2 .boton1 {
+		order: 1;
+	}
+	.contenedorStreaming .responsive2 .boton2 {
+		order: 2;
+	}
+	.contenedorStreaming .streaming {
+		float: left;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.contenedorStreaming .logos2 .imagen {
+		position: absolute;
+		top: calc(50% - 5px);
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: calc(100%) !important;
+	}
+	.contenedorStreaming .streaming .columnaMovil {
+		float: left;
+		width: 100%;
+		display: flex;
+		flex: auto 1 1;
+		margin-top: 20px;
+	}
+	.contenedorStreaming .streaming .columnaMovil div:first-child {
+		float: left;
+		width: calc(100%);
+		margin-left: 10px;
+		margin-top: 10px;
+		position: relative;
+	}
+	.contenedorStreaming .streaming .columnaMovil div .imagenes {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: calc(100% - 40px);
+		background: white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0px 10px;
+	}
+	.contenedorStreaming .streaming .columnaMovil div .imagenes .imgNone {
+		display: none;
+	}
+	.contenedorStreaming .streaming .columnaMovil div .imagen {
+		position: absolute;
+		width: calc(90%);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.contenedorStreaming .streaming .columnaMovil div .imagenes img {
+		width: 100%;
+	}
+	.contenedorStreaming .streaming .columnaMovil div .imagenes .img5 {
+		/* width: 13vw; */
+		max-width: 120px;
+		/* display: none; */
+	}
+	.contenedorStreaming .streaming .columnaMovil div:first-child {
+		margin-left: 0px;
+	}
+	.contenedorStreaming .streaming .columnaMovil div .fondoImagen:first-child {
+		float: left;
+		width: 100%;
+	}
+}

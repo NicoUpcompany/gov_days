@@ -1,0 +1,616 @@
+@import "../../../scss/variables";
+
+.fondo {
+	background-color: #f2f3f4;
+
+	.contenedorAgenda {
+		display: table;
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+		clear: both;
+		padding: 0 0 50px;
+
+		.days {
+			float: left;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			background: transparent;
+			height: 60px;
+			margin-top: 30px;
+
+			button {
+				background-color: #f1f5f7;
+				font-family: "Montserrat";
+				font-weight: bold;
+				color: $font-grey-unactive;
+				font-size: $subtitle-font-size;
+				border: none;
+				margin: 0px;
+				width: calc(18% - 10px);
+				display: flex;
+				padding: 0px;
+				align-items: center;
+				justify-content: flex-start;
+				cursor: pointer;
+				width: 100%;
+				max-width: 200px;
+				padding: 15px 10px;
+
+				span {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+
+			.clase {
+				background-color: $background-light;
+				color: #8f3b90;
+			}
+		}
+
+		.break {
+			float: left;
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			background: #d4f8eb;
+			// opacity: 0.5;
+			color: #616161;
+			.tiempo {
+				font-family: "Montserrat";
+				float: left;
+				width: 18%;
+				min-width: 160px;
+				padding-left: 10px;
+
+				.caffe {
+					float: left;
+					width: 25px;
+					margin-top: 25px;
+					transform: translateY(-50%);
+					padding-left: 5px;
+					line-height: 50px;
+					color: #4fadd4;
+				}
+				span {
+					padding: 0px 7px;
+					text-decoration: none;
+					float: left;
+					color: #616161;
+					width: calc(100% - 30px);
+					font-weight: 400 !important;
+					font-family: "Montserrat";
+				}
+			}
+			.duracion {
+				float: left;
+				width: 100px;
+				max-width: 100px !important;
+				p {
+					width: 100px;
+					font-weight: bold;
+					font-family: "Montserrat";
+				}
+			}
+		}
+
+		.row2 {
+			p {
+				margin-bottom: 0px;
+			}
+
+			.fondoRow {
+				float: left;
+				width: 100%;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			.imagenes {
+				float: left;
+				width: 100%;
+				padding: 20px 0px 0;
+
+				.espacio {
+					float: left;
+					width: calc(20% + 100px);
+				}
+
+				.imagen {
+					float: right;
+					width: calc(100% - 20%);
+
+					.icon {
+						float: left;
+						width: 80px;
+						height: 80px;
+						border-radius: 200px;
+						margin-bottom: 10px;
+						margin-right: 15px;
+					}
+
+					.nombrecolaborador {
+						color: #616161 !important;
+						font-size: 16px !important;
+						text-align: left;
+						margin-left: 20px;
+						padding-left: 75px;
+						.ultimo {
+							font-weight: 500;
+						}
+						.res {
+							margin-left: 75px;
+						}
+					}
+				}
+			}
+			.plenario {
+				div {
+					&:nth-child(2) {
+						float: left;
+						width: calc(100% - 100px);
+						padding: 0px 0 0 0px;
+					}
+				}
+				float: left;
+				width: calc(100% - 20%);
+				.texto1 {
+					color: #616161;
+					font-weight: 500;
+					float: left;
+					width: calc(80% - 140px);
+					padding-bottom: 0px;
+					font-size: 18px;
+					strong {
+						font-weight: 700;
+					}
+				}
+				.texto3 {
+					color: #616161;
+					float: left;
+					width: calc(70%);
+					padding-bottom: 0px;
+					font-size: 14px;
+					line-height: 22px;
+				}
+				.texto2 {
+					float: right;
+					width: calc(20% + 50px);
+					min-width: 140px;
+					display: inline-block;
+					padding-bottom: 0px;
+					.conFondo {
+						text-decoration: none;
+						width: calc(100%);
+						max-width: 180px;
+						color: #8f3b90 !important;
+						border: 2px solid #8f3b90;
+						font-weight: bold;
+						display: inline-block;
+						background: transparent;
+						text-align: center;
+						border-radius: 5px;
+						padding: 5px 10px;
+						margin-bottom: 0px;
+					}
+					.sinFondo {
+						text-decoration: none;
+						float: left;
+						width: calc(100% - 36px);
+						margin-left: 20px;
+					}
+					img {
+						margin-right: 15px;
+						float: right;
+						width: 11px;
+						display: inline-block;
+						cursor: pointer;
+						margin-top: 10px;
+						transform: rotate(0deg);
+					}
+				}
+				.imagen {
+					float: left;
+					width: calc(100%);
+					margin-top: 20px;
+				}
+				.imagen:first-child {
+					margin-top: 40px;
+				}
+				.icon {
+					float: left;
+					width: 80px;
+					height: 80px;
+					border-radius: 200px;
+					margin-bottom: 10px;
+				}
+			}
+			float: left;
+			width: 100%;
+			padding-bottom: 0px;
+			background: $background-light;
+			transition-duration: 1s;
+			.tiempo {
+				float: left;
+				width: 18%;
+				padding-left: 10px;
+				span {
+					padding: 0px 7px;
+					margin-top: -10px;
+					font-weight: bold;
+				}
+				p {
+					font-weight: 500;
+					color: #616161;
+					strong {
+						font-weight: bold;
+					}
+				}
+			}
+			.duracion {
+				p {
+					font-weight: 500;
+					color: #616161;
+					strong {
+						font-weight: bold;
+					}
+				}
+				float: left;
+				width: calc(100px + 2%);
+			}
+		}
+		.row4 {
+			float: left;
+			width: 100%;
+			color: #6a6a6a;
+			font-weight: 600;
+			line-height: 70px;
+			height: 70px;
+			background: #fff;
+			border: 1px solid #f1f5f7;
+			p {
+				font-size: 14px;
+				color: #6a6a6a;
+				font-weight: 700;
+			}
+			.tiempo {
+				float: left;
+				width: 18%;
+				padding-left: 10px;
+				span {
+					padding: 0px 7px;
+					margin-bottom: 0px;
+					color: #6a6a6a;
+					font-size: 18px;
+				}
+			}
+			.duracion {
+				float: left;
+				width: calc(100px + 2%);
+			}
+			.plenario {
+				float: left;
+				width: calc(100% - 20%);
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+			}
+		}
+
+		.grey {
+			background-color: #f8f9fa;
+		}
+	}
+}
+
+.responsive {
+	height: 530px;
+}
+#logoIcare {
+	position: absolute;
+	left: 50px;
+	top: 15px;
+}
+.imagenLogo2 {
+	position: absolute;
+	top: 110px;
+	left: 50px;
+}
+.contentImg {
+	float: left;
+	width: 100%;
+	margin: 20px 0px;
+}
+
+.plenario {
+	.iamgen {
+		span {
+			color: #333333;
+		}
+	}
+}
+.color {
+	background: #f8f9fa;
+	padding-bottom: 20px;
+}
+.btnEnlace {
+	display: inline-block;
+}
+.conFondoRevive {
+	text-decoration: none !important;
+	float: left;
+	width: calc(100% - 26px);
+	max-width: 110px;
+	color: white;
+	display: inline-block;
+	background: #0033a0;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	&:hover {
+		text-decoration: none !important;
+		float: left;
+		width: calc(100% - 26px);
+		max-width: 110px;
+		color: white;
+		display: inline-block;
+		background: #0033a0;
+		border-radius: 5px;
+		padding: 5px 10px;
+		margin-bottom: 10px;
+	}
+}
+.mita2 {
+	float: left;
+	width: calc(50% - 20px) !important;
+	margin-bottom: 20px;
+}
+.mita1 {
+	float: left;
+	width: calc(100% / 3);
+	padding-right: 10px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+// https://drive.google.com/drive/u/0/folders/1alKVcklaSCYK2WX1z7zAiljOoF5xkvGw
+.speaker {
+	background-image: url("../../../assets/images/default-user-img.jpg");
+	background-position: center center;
+	background-size: cover;
+}
+
+.franciscoMendez {
+	background-image: url("../../../assets/images/speakers/FRANCISCO\ MÉNDEZ.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.alvaroPortugal {
+	background-image: url("../../../assets/images/speakers/ÁLVARO\ PORTUGAL.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.kennethPugh {
+	background-image: url("../../../assets/images/speakers/SENADOR\ KENNETH\ PUGH.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.joseClastornik {
+	background-image: url("../../../assets/images/speakers/JOSÉ\ CLASTORNIK.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.joseFlores {
+	background-image: url("../../../assets/images/speakers/JOSÉ\ _PEPE_\ FLORES\ PETERS.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.cesarLopez {
+	background-image: url("../../../assets/images/speakers/CÉSAR\ LÓPEZ.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.alejandroBarros {
+	background-image: url("../../../assets/images/speakers/ALEJANDRO\ BARROS.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.didierDeSaintPierre {
+	background-image: url("../../../assets/images/speakers/DIDIER\ DE\ SAINT\ PIERRE.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.hectorInsunsa {
+	background-image: url("../../../assets/images/speakers/HÉCTOR\ INSUA.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.jimmyMunoz {
+	background-image: url("../../../assets/images/speakers/JIMMY\ MUÑOZ\ GALLARDO.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.joseFuentealba {
+	background-image: url("../../../assets/images/speakers/José\ Fuentealba.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.danielleZaror {
+	background-image: url("../../../assets/images/speakers/DANIELLE\ ZAROR.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.veronicaQuinteros {
+	background-image: url("../../../assets/images/speakers/Veronica\ Quinteros.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.hansLobel {
+	background-image: url("../../../assets/images/speakers/DR.\ HANS\ LÖBEL.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.felipeMancini {
+	background-image: url("../../../assets/images/speakers/FELIPE\ MANCINI.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.enzoAbbagliati {
+	background-image: url("../../../assets/images/speakers/Enzo\ Abbagliati.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.ricardoBaeza {
+	background-image: url("../../../assets/images/speakers/RICARDO\ BAEZA-YATES.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.mariaLuisa {
+	background-image: url("../../../assets/images/speakers/María\ Luisa\ Riquelme.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.karenSchramm {
+	background-image: url("../../../assets/images/speakers/Kareen\ Schramm.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.yerkaYurich {
+	background-image: url("../../../assets/images/speakers/YERKA\ YURICH.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.julioCovarubia {
+	background-image: url("../../../assets/images/speakers/julio\ covarrubia.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+.jeannetteEscudero {
+	background-image: url("../../../assets/images/speakers/Jeannette\ Escudero.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 790px) {
+	.fondo {
+		.contenedorAgenda {
+			display: block;
+			.days {
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				margin: 0px;
+				padding: 0px;
+				button {
+					margin: 0;
+				}
+			}
+			.row4 {
+				display: none;
+			}
+			.row2 {
+				.tiempo {
+					width: 50%;
+					p {
+						margin-bottom: 20px;
+						margin-left: 10px;
+					}
+				}
+				.duracion {
+					width: 50%;
+				}
+				.plenario {
+					width: 100%;
+					.texto1 {
+						width: 100%;
+						padding: 20px 20px 0;
+					}
+					.texto3 {
+						width: 100%;
+						padding: 0 20px;
+					}
+					.texto2 {
+						width: 100%;
+						padding: 0 20px;
+						.conFondo {
+							margin-right: 10px;
+							max-width: 100%;
+						}
+						img {
+							margin-right: 0;
+							margin-top: -30px;
+						}
+					}
+				}
+				.imagenes {
+					.imagen {
+						width: 100%;
+						.nombrecolaborador {
+							.res {
+								margin-left: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.fondo .contenedor .stands2 .col {
+		// width: calc((100% / 2) - (20px / 2)) !important;
+		width: 100% !important;
+		margin-right: 0px;
+		&:nth-child(3n) {
+			margin-right: 0px !important;
+		}
+		&:nth-child(2n) {
+			margin-right: 0px !important;
+		}
+	}
+	.pregunta2 .card .barra {
+		padding: 0px 20px !important;
+	}
+	.fondo .menu {
+		padding: 0px 20px !important;
+	}
+	.pregunta2 .card .barra .message .volumen {
+		display: none !important;
+	}
+	.right {
+		display: none;
+	}
+	.mita1 {
+		width: 100%;
+		max-width: none;
+		padding: 0 20px;
+		margin-bottom: 20px;
+	}
+	.mita2 {
+		width: 100% !important;
+		max-width: none;
+		padding: 0 20px !important;
+		margin-bottom: 20px;
+	}
+}

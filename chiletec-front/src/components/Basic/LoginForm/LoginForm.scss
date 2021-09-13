@@ -1,0 +1,85 @@
+@import "../../../scss/index.scss";
+.formLogin {
+	.campo {
+		float: left;
+		width: 100%;
+		// margin-bottom: 20px;
+		position: relative;
+
+		.MuiFormControl-root {
+			width: 100%;
+		}
+		label {
+			text-transform: uppercase;
+			font-family: "Montserrat" !important;
+			position: absolute;
+			transition: 0.3s all ease;
+			top: -10px;
+			left: 7px;
+			font-size: 12px;
+			padding: 2px 4px;
+			background: transparent;
+			font-weight: bold !important;
+			color: #999999 !important;
+			opacity: 0;
+		}
+		input {
+			float: left;
+			width: 100%;
+			transition: 0.3s all ease;
+			color: #999999;
+			padding-left: 20px;
+			max-width: 100% !important;
+			background: #e9eff6;
+			height: 50px;
+			border: 1px solid #dfe1e3;
+			font-family: "Montserrat";
+
+			&:focus ~ label {
+				opacity: 1;
+			}
+			&:focus {
+				border: 1px solid #dfe1e3;
+			}
+			&:hover {
+				border: 1px solid #dfe1e3;
+			}
+			&::placeholder {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.campobutton {
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+
+		.btn {
+			float: right;
+			width: 100%;
+			background: #0095e6;
+			color: #fff;
+			font-size: 16px;
+			font-family: "Montserrat";
+			font-weight: bold;
+			height: 50px;
+			border-radius: 5px !important;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-transform: uppercase;
+			border: none;
+			cursor: pointer;
+		}
+	}
+	.enlace {
+		float: left;
+		width: 100%;
+		font-family: "Montserrat";
+		color: #0000a2;
+		text-align: center;
+		margin-top: 20px;
+		text-decoration: underline;
+	}
+}
